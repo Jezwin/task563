@@ -1,0 +1,9 @@
+<sly data-sly-use.howToJoinObj="com.auki.core.models.HowToJoinModel">
+<sly data-sly-list.tiles="${howToJoinObj.tiles.listChildren}">
+<div>
+<img src="${tiles.imagePath}">
+${tiles.title}
+${tiles.description}
+</div>
+</sly>
+</sly>

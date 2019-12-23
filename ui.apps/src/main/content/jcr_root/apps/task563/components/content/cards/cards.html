@@ -1,0 +1,12 @@
+<sly data-sly-use.cardsObj="com.auki.core.models.CardsModel">
+<sly data-sly-list.cards="${cardsObj.cards.listChildren}">
+<div>
+<img src="${cards.imagePath}">
+${cards.jobtype}
+${cards.jobTitle}
+${cards.jobDescription}
+${cards.buttonText}
+${cards.buttonPath}
+</div>
+</sly>
+</sly>

@@ -1,0 +1,10 @@
+<sly data-sly-use.cardCarouselObj="com.auki.core.models.CardCarouselModel">
+<sly data-sly-list.carouselcards="${cardCarouselObj.carouselcards.listChildren}">
+<img src="${carouselcards.normalImagePath}">
+<img src="${carouselcards.activeImagePath}">
+${carouselcards.cardTitle}
+${carouselcards.cardDescription}
+${carouselcards.cardTitle}
+${carouselcards.buttonPath}
+</sly>
+</sly>
