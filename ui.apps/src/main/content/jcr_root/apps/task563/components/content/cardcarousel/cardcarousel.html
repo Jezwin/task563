@@ -1,10 +1,60 @@
+
 <sly data-sly-use.cardCarouselObj="com.auki.core.models.CardCarouselModel">
-<sly data-sly-list.carouselcards="${cardCarouselObj.carouselcards.listChildren}">
+</sly>
+
+
+
+
+<!--
 <img src="${carouselcards.normalImagePath}">
 <img src="${carouselcards.activeImagePath}">
-${carouselcards.cardTitle}
-${carouselcards.cardDescription}
+-->
+${carouselcardsList.index}
+
+
 ${carouselcards.cardTitle}
 ${carouselcards.buttonPath}
+
+
+
+
+
+  <section class="section slider">
+
+
+    <div class="section__entry section__entry--center">
+    </div>
+
+
+  	<input type="radio" name="slider" id="slide-0" class="slider__radio">
+  	<input type="radio" name="slider" id="slide-1" class="slider__radio">
+  	<input type="radio" name="slider" id="slide-2" class="slider__radio">
+  	<input type="radio" name="slider" id="slide-3" class="slider__radio"  checked>
+  	<input type="radio" name="slider" id="slide-4" class="slider__radio">
+	<input type="radio" name="slider" id="slide-5" class="slider__radio">
+	<input type="radio" name="slider" id="slide-6" class="slider__radio">
+
+
+  	<div class="slider__holder">
+
+<sly data-sly-list.carouselcards="${cardCarouselObj.carouselcards.listChildren}">
+
+  		<label for="slide-${carouselcardsList.index}" class="slider__item slider__item--${carouselcardsList.index} card">
+        <div class="slider__item-content">
+<div class="carouselcards__header">
+          <h4 class="carouselcards__title">${carouselcards.cardTitle}</h4>
+<hr class="carouselcards__hr">
+          <p class="carouselcards__description">${carouselcards.cardDescription}</p>
+</div>
+		  <img class="carouselcards__img" src="${carouselcards.normalImagePath}">
+
+
+
+        </div>
+  		</label> <!-- Slider__item -->
 </sly>
-</sly>
+  	</div> <!-- Slider Holder -->
+
+  </section> <!-- Section Slider -->
+
+<div class="cardcarousel__wrapper"> </div>
