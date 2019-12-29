@@ -1,9 +1,28 @@
 <sly data-sly-use.whoIsYourHeroObj="com.auki.core.models.WhoIsYourHeroModel">
-
-<img src="${whoIsYourHeroObj.posterPath}">
-${whoIsYourHeroObj.heroTitle}
-${whoIsYourHeroObj.heroDescription}
-${whoIsYourHeroObj.heroSubtitle}
-${whoIsYourHeroObj.videoPath}
-
 </sly>
+<div class="wiy__video">
+<video muted autoplay loop>
+ <source src="${whoIsYourHeroObj.videoPath}" type="video/mp4">
+</video>
+</div>
+<div class="wiy__color-overlay"> </div>
+<div class= "wiy__overlay">
+<img src="${whoIsYourHeroObj.posterPath}">
+<div class="wiy__content">
+<h4>${whoIsYourHeroObj.heroDescription}</h4>
+<div class="wiy__footer">
+<h5>${whoIsYourHeroObj.heroSubtitle}</h5>
+
+<div class="wiy__icon_container" id="#wiyid" onClick="document.getElementById('#cardcarousel').scrollIntoView();">
+<svg class="wiy__icon">
+<svg viewBox="0 0 44 32">
+<path d="M21.671 20.631l-12.209-12.209-2.367 2.367 14.576 14.576 14.576-14.576-2.367-2.367z"></path>
+</svg>
+</svg>
+</div>
+
+</div>
+</div>
+</div>
+
+
