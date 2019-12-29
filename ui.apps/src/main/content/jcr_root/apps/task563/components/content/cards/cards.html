@@ -1,12 +1,18 @@
 <sly data-sly-use.cardsObj="com.auki.core.models.CardsModel">
+</sly>
+<div class="cards__container">
 <sly data-sly-list.cards="${cardsObj.cards.listChildren}">
-<div>
+<div class="cards__child">
 <img src="${cards.imagePath}">
+<div class="cards__img-overlay">
+</div>
+<div class="cards__content">
 ${cards.jobtype}
-${cards.jobTitle}
-${cards.jobDescription}
-${cards.buttonText}
-${cards.buttonPath}
+<h3>FULL TIME</h3>
+<h4>${cards.jobTitle}</h4>
+<h5>${cards.jobDescription}</h5>
+<a class="cards__button" href="#">${cards.buttonText}</a>
+</div>
 </div>
 </sly>
-</sly>
+</div>

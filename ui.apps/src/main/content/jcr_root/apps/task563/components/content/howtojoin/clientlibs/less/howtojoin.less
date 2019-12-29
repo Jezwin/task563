@@ -1,1 +1,53 @@
+.howtojoin__container {
+display: grid;
+ grid-template-columns: repeat(3, 1fr);
 
+    img{
+width: 478px;
+    }
+}
+.howtojoin__tiles{
+border: 1px solid black;
+position: relative;
+}
+
+.howtojoin {
+background: black;
+color: white;
+
+}
+
+.tile__wrap{
+position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(22, 22, 22, 0.7);
+
+}
+
+.tile__content{
+
+    position: absolute;
+    top: 109px;
+    text-align: center;
+    max-width: 288px;
+    left: 92px;
+    h5{
+font-family:taskFont900;
+    font-size: 1.3vw;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: #ffcc01;
+    }
+    h6{
+margin-top: 4px;
+    font-size: 17px;
+    color: #FFFFFF;
+    letter-spacing: 0.25px;
+    text-align: center;
+    line-height: 24px;
+    }
+}

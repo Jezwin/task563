@@ -1,8 +1,19 @@
 <sly data-sly-use.getInTouchObj="com.auki.core.models.GetInTouchModel">
+</sly>
+<div class="getintouch__title">
 <h1>${getInTouchObj.title}</h1>
 <h2>${getInTouchObj.subtitle}</h2>
+</div>
+<div class="row getintouch__iconcontainer">
 <sly data-sly-list.icons="${getInTouchObj.icons.listChildren}">
+<div class="col-md-3 getintouch__icon">
+<div class="getintouch__wrap">
+<div class="getintouch__img_wrap">
+
 <img src="${icons.iconPath}">
-${icons.iconText}
+</div>
+<h5>${icons.iconText}</h5>
+</div>
+</div>
 </sly>
-</sly>
+</div>

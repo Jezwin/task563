@@ -1,7 +1,26 @@
 <sly data-sly-use.timelineObj="com.auki.core.models.TimelineModel">
+</sly>
+
+
+<ul class="timeline">
 <sly data-sly-list.timelineIcons="${timelineObj.timelineIcons.listChildren}">
+  <li>
+    <div class="${ timelineIconsList.odd ? 'direction-l' : 'direction-r'}">
+      <div >
+        <span class="hexa"></span>
+<hr class ="${ timelineIconsList.odd ? 'timeline__hr-l' : 'timeline__hr-r'}">
+<div class="${ timelineIconsList.odd ? 'timeline__content-l' : 'timeline__content-r'}">
+
 <img src="${timelineIcons.iconPath}">
-${timelineIcons.iconTitle}
-${timelineIcons.iconDescription}
+<div class="timeline__content">
+<h4>${timelineIcons.iconTitle}</h4>
+<h6>${timelineIcons.iconDescription}</h6>
+</div>
+
+<div>
+
+      </div>
+    </div>
+  </li>
 </sly>
-</sly>
+</ul>
