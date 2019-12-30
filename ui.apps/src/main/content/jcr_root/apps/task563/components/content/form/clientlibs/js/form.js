@@ -1,3 +1,4 @@
+console.log("Hi");
 const getDbData = () => {
 $.ajax({
 		type: "GET",
